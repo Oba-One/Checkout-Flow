@@ -1,6 +1,7 @@
 # Checkout-Flow
 
 ![Water flow](water-flow.jpg)
+
 Checkout flow using React Context API and GraphQL 
 
 ## Getting Started
