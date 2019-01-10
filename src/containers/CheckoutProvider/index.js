@@ -1,3 +1,4 @@
+// Holds Context API that Contains all State & Methods for Checkout
 import * as React from 'react';
 import { CheckoutContext } from './context'
 
