@@ -1,17 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 
+import { GlobalStyle, theme} from './theme'
 import CheckoutPage from './containers/CheckoutPage'
 
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
+const App = () => (
+  <Router>
+    <>
+      <GlobalStyle/>
+      <ThemeProvider theme={theme}>
         <CheckoutPage/>
-      </Router>
-    );
-  }
-}
+      </ThemeProvider>
+    </>
+  </Router>
+);
 
 export default App;
